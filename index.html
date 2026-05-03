@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola Planeta Criança | Educação Infantil</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+        <div class="header-content">
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <img src="assets/Planeta Criança (transparente).png" alt="Logo Escola Planeta Criança" class="logo-img">
+            </a>
+            
+            <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+            
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#quem-somos">Quem Somos</a></li>
+                    <li><a href="#metodologia">Metodologia</a></li>
+                    <li><a href="#infraestrutura">Infraestrutura</a></li>
+                    <li><a href="jogos.html">Jogos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                
+                <!-- Botões iguais aos da foto -->
+                <div class="nav-actions">
+                    <a href="#contato" class="nav-btn">Agende sua visita &#128197;</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-bg-slider" id="heroBgSlider">
+                <div class="hero-slide active" style="background-image: url('assets/galeria_2.jpg');"></div>
+                <div class="hero-slide" style="background-image: url('assets/galeria_22.jpg');"></div>
+                <div class="hero-slide" style="background-image: url('assets/galeria_15.jpg');"></div>
+            </div>
+            
+            <div class="container hero-content">
+                <h1>Onde o aprendizado encontra a imaginação</h1>
+                <p>Proporcionamos de maneira lúdica a ampliação da socialização e dos conhecimentos para que a criança desenvolva sua criatividade e autoconfiança.</p>
+                <div class="hero-buttons">
+                    <a href="#quem-somos" class="btn-secondary">Conheça a Escola</a>
+                    <a href="#contato" class="btn-primary">Fale Conosco</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="quem-somos" class="about section-padding">
+            <div class="container about-grid">
+                <div class="about-card">
+                    <h2>Quem Somos</h2>
+                    <p>A Escola de Educação Infantil Planeta Criança proporciona de maneira lúdica a ampliação da socialização e dos conhecimentos já adquiridos para que a criança desenvolva sua criatividade e auto confiança.</p>
+                    <img class="image-quem" src="assets/quem_somos_dest.png" alt="">
+                </div>
+                <div class="about-card methodology-card">
+                    <h2>Nossa Metodologia</h2>
+                    <p>A metodologia vem sendo renovada a cada dia, pela convicção de que a aprendizagem é um processo de construção que acontece com a interação do aluno com o grupo, tendo a intervenção dos Educadores, que auxiliarão no processo Ensino-aprendizagem, com o objetivo de formar alunos críticos autônomos, seguros e acima de tudo felizes.</p>
+                    <img class="image-metodologia" src="assets/metodoligia_dest.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="infraestrutura" class="infra section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title">Nossos Espaços</h2>
+                
+                <div class="infra-slider-container">
+                    <div class="infra-slider" id="infraSlider">
+                        
+                        <div class="infra-slide active">
+                            <div class="infra-content">
+                                <img src="assets/galeria_15.jpg" alt="Sala de aula lúdica">
+                                <div class="infra-text">
+                                    <h3>Ambientes Lúdicos</h3>
+                                    <p>Salas projetadas para estimular a criatividade e a exploração sensorial das crianças através do brincar.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="infra-slide">
+                            <div class="infra-content">
+                                <img src="assets/galeria_16.jpg" alt="Professores e nutricionista">
+                                <div class="infra-text">
+                                    <h3>Equipe Especializada</h3>
+                                    <p>Profissionais capacitados e apaixonados pela educação e nutrição infantil, focados no acolhimento.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="infra-slide">
+                            <div class="infra-content">
+                                <img src="assets/galeria_20.jpg" alt="Atividade prática">
+                                <div class="infra-text">
+                                    <h3>Projetos Pedagógicos</h3>
+                                    <p>Atividades dinâmicas que conectam o aprendizado teórico com vivências práticas e sociais.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <button class="infra-prev" id="infraPrev">&#10094;</button>
+                    <button class="infra-next" id="infraNext">&#10095;</button>
+                    
+                    <div class="infra-dots" id="infraDots"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="contact section-padding">
+            <div class="container">
+                <h2 class="section-title">Venha nos Visitar</h2>
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h3>Nossa Localização</h3>
+                        <p>📍 Rua Basílio da Cunha, 891 - Vila Mariana<br>São Paulo, SP</p>
+                        <p>📞 (11) 2591-1001 / (11) 98106-9586</p>
+                        <p>✉️ contato@escolaplanetacriancasp.com.br</p>
+                    </div>
+                    <div class="contact-actions">
+                        <a href="#" class="btn-primary whatsapp-btn">Contato via WhatsApp</a>
+                        <a href="#" class="btn-secondary email-btn">Enviar E-mail</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Escola Planeta Criança. Todos os direitos reservados.</p>
+            <p class="footer-note">Autorizada pela Diretoria Regional de Educação Ipiranga</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

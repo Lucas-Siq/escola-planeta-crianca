@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogos | Escola Planeta Criança</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header (Exatamente igual ao do Index) -->
+    <header class="header">
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <img src="assets/Planeta Criança (transparente).png" alt="Logo Escola Planeta Criança" class="logo-img">
+            </a>
+            
+            <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+            
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#quem-somos">Quem Somos</a></li>
+                    <li><a href="index.html#metodologia">Metodologia</a></li>
+                    <li><a href="index.html#infraestrutura">Infraestrutura</a></li>
+                    <li><a href="jogos.html">Jogos</a></li>
+                    <li><a href="index.html#contato">Contato</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="index.html#contato" class="nav-btn">Agende sua visita &#128197;</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main com a classe bg-light para o fundo cinza claro -->
+    <!-- Main com a classe bg-light para o fundo cinza claro -->
+    <main class="bg-light section-padding" style="min-height: 70vh;">
+        <div class="container">
+            <h1 class="section-title">Nossos Jogos</h1>
+            
+            <!-- Área da Lista de Jogos -->
+            <div style="display: flex; gap: 30px; flex-wrap: wrap; justify-content: center; margin-top: 40px;">
+                
+                <!-- Card do Jogo: Aventura Matemática -->
+                <!-- Substitua o 'link-do-seu-jogo.html' pela URL real do jogo -->
+                <a href="aventura-matematica.html" target="_blank" style="text-decoration: none; background: var(--white); padding: 40px 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.06); text-align: center; border-bottom: 5px solid var(--accent-color); width: 100%; max-width: 320px; transition: transform 0.3s ease; display: block;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+                    
+                    <div style="font-size: 3rem; margin-bottom: 15px;">🔢</div>
+                    <h3 style="color: var(--secondary-color); margin-bottom: 10px; font-size: 1.5rem; font-weight: 800;">Aventura Matemática</h3>
+                    <p style="color: var(--text-light); margin-bottom: 25px;">Aprenda e pratique matemática de uma forma super divertida!</p>
+                    
+                    <span class="btn-primary" style="padding: 10px 25px; font-size: 0.9rem;">Jogar Agora</span>
+                </a>
+
+                <!-- Futuros jogos podem ser adicionados aqui copiando e colando o bloco <a> acima -->
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer (Exatamente igual ao do Index) -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Escola Planeta Criança. Todos os direitos reservados.</p>
+            <p class="footer-note">Autorizada pela Diretoria Regional de Educação Ipiranga</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

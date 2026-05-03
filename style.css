@@ -1,0 +1,479 @@
+/* Variáveis de Cores e Fontes (Novas Cores baseadas na imagem 1) */
+:root {
+    --primary-color: #BF8B2A; /* Ouro mais escuro */
+    --accent-color: #D9AB23;  /* Ouro mais claro */
+    --secondary-color: #1F438C; /* Azul escuro */
+    --secondary-light: #1C71A6; /* Azul claro */
+    --text-color: #0D0D0D;    /* Preto */
+    --text-light: #666666;    /* Cinza para textos menores */
+    --bg-light: #F9FAFB;
+    --white: #FFFFFF;
+    --font-main: 'Nunito', sans-serif;
+    --transition: all 0.4s ease;
+}
+
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: var(--white);
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+.bg-light {
+    background-color: var(--bg-light);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 50px;
+    font-weight: 800;
+}
+
+/* Botões Modernizados */
+.btn-primary, .btn-secondary {
+    display: inline-block;
+    padding: 14px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 800;
+    transition: var(--transition);
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: var(--accent-color);
+    color: var(--white);
+    border: 2px solid var(--accent-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: #BF8B2A;
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border: 2px solid var(--secondary-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--secondary-light);
+    color: var(--white);
+    border: var(--secondary-light);
+}
+
+/* Header & Navegação (Novo Estilo da Foto) */
+.header {
+    background-color: var(--secondary-color); /* Fundo azul escuro */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+
+/* O container do header agora ocupa mais espaço para distribuir os itens */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 3%;
+}
+
+.logo-img {
+    max-height: 75px; /* Ajuste o tamanho do logo aqui */
+    width: auto;
+    margin: 0 0 0 100px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* Permite que o menu ocupe todo o espaço livre */
+    justify-content: flex-end;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    flex-grow: 1; /* Faz a lista empurrar os botões para a direita */
+    justify-content: space-evenly; /* Distribui os itens por igual no espaço */
+    padding: 0 30px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: var(--white); /* Texto dos links branco */
+    font-weight: 600;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.nav-list a:hover {
+    color: var(--accent-color); /* Fica dourado ao passar o mouse */
+}
+
+/* Grupo de Botões */
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Botão Principal: Agende sua visita (Azul Claro) */
+.nav-btn {
+    background-color: var(--accent-color); /* Azul claro vibrante idêntico ao da foto */
+    color: var(--white);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 40px; /* Formato pílula */
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: var(--transition);
+    white-space: nowrap;
+    margin: 0 100px 0 0; /* Margem direita para afastar do logo */
+}
+
+.nav-btn:hover {
+    background-color: #007BB5; /* Azul um pouco mais escuro no hover */
+    color: var(--white);
+}
+
+/* Botão Secundário: Entrar (Transparente com Borda) */
+.nav-btn-outline {
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 12px 25px;
+    border-radius: 40px; /* Formato pílula */
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: var(--transition);
+    white-space: nowrap;
+}
+
+.nav-btn-outline:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: var(--white);
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--white); /* Ícone hambúrguer branco */
+}
+/* Hero Section com Background Slideshow */
+.hero {
+    position: relative;
+    height: 80vh; /* Altura da seção Hero */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+}
+
+.hero-bg-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hero-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out; /* Transição suave */
+}
+
+.hero-slide.active {
+    opacity: 1;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Sobreposição para contraste */
+    z-index: 2;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    color: var(--white);
+    font-weight: 800;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin: 0 auto 40px;
+    color: rgba(255,255,255,0.9);
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Quem Somos e Metodologia (Grid Atualizado) */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.about-card {
+    background: var(--white);
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+    border-top: 6px solid var(--accent-color);
+    display: table-column;
+    justify-content: center;
+}
+
+.image-quem {
+    margin-top: 30px;
+}
+
+.image-metodologia{
+    margin: 30px 0 0 70px;
+}
+
+.methodology-card {
+    border-top: 6px solid var(--secondary-color);
+}
+
+.about-card h2 {
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+/* Infraestrutura (Slideshow Moderno) */
+.infra-slider-container {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.infra-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.infra-slide {
+    min-width: 100%;
+    display: none;
+}
+
+.infra-slide.active {
+    display: block;
+}
+
+.infra-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background: var(--white);
+}
+
+.infra-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.infra-text {
+    padding: 50px;
+}
+
+.infra-text h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+/* Controles do Slideshow de Infraestrutura */
+.infra-prev, .infra-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    color: var(--secondary-color);
+    border: none;
+    font-size: 1.5rem;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+    transition: var(--transition);
+}
+
+.infra-prev { left: 20px; }
+.infra-next { right: 20px; }
+
+.infra-prev:hover, .infra-next:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.infra-dots {
+    text-align: center;
+    padding: 20px;
+    background: var(--white);
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.dot.active, .dot:hover {
+    background-color: var(--primary-color);
+}
+
+/* Contato */
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    background: var(--white);
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+}
+
+.contact-info h3 {
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.contact-actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Footer */
+/* Footer */
+.footer {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 40px 0;
+    /* Remova a linha "margin-top: 50px;" ou mude para 0 */
+    margin-top: 0; 
+}
+
+.footer-note {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+/* Responsividade (Tablet e Celular) */
+@media (max-width: 1024px) {
+    .header { height: 80px; }
+    .hero h1 { font-size: 2.8rem; }
+    .about-grid, .infra-content, .contact-wrapper { grid-template-columns: 1fr; }
+    .infra-content img { height: 300px; }
+}
+
+@media (max-width: 768px) {
+    .menu-toggle { display: block; }
+    
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px; left: 0; width: 100%;
+        background-color: var(--white);
+        padding: 30px;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+        z-index: 999;
+    }
+
+    .nav-menu.active { display: flex; }
+    .nav-list { flex-direction: column; text-align: center; gap: 20px; width: 100%; }
+    .nav-btn { width: 100%; }
+
+    .hero h1 { font-size: 2.2rem; }
+    .hero p { font-size: 1.1rem; }
+    .hero-buttons { flex-direction: column; gap: 10px; }
+    
+    .about-card, .infra-text, .contact-wrapper { padding: 30px; }
+    .infra-content img { height: 200px; }
+}
