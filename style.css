@@ -279,9 +279,9 @@ body {
 /* Quem Somos e Metodologia (Grid Atualizado) */
 .about-grid {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     gap: 50px;
-    align-items: start;
+    align-items: stretch;
 }
 
 .about-card {
@@ -460,7 +460,7 @@ body {
         flex-direction: column;
         position: absolute;
         top: 80px; left: 0; width: 100%;
-        background-color: var(--white);
+        background-color: var(--secondary-color);
         padding: 30px;
         box-shadow: 0 10px 15px rgba(0,0,0,0.05);
         z-index: 999;
