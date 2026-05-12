@@ -473,6 +473,11 @@ body {
     .hero h1 { font-size: 2.2rem; }
     .hero p { font-size: 1.1rem; }
     .hero-buttons { flex-direction: column; gap: 10px; }
+
+    .about-grid {
+        grid-template-columns: 1fr; /* Força os cards a ficarem em uma única coluna */
+        gap: 30px; /* Diminui o espaço entre eles no celular, opcional */
+    }
     
     .about-card, .infra-text, .contact-wrapper { padding: 30px; }
     .infra-content img { height: 200px; }
